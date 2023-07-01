@@ -1,9 +1,5 @@
 html {
-    
-    /* font-family: 'Roboto', sans-serif; */
-    font-family: 'Raleway', sans-serif;
-
-
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -174,7 +170,7 @@ tr {
 }
 .grid-5 {
     grid-area: grid-5;
-    background-image: url("../images/WIP.jpg");
+    background-image: url("../images/web/html.jpg");
     background-position: center;
     background-size: cover;
 }

@@ -45,6 +45,30 @@ div {
   color: #FFFFFF;
 }
 
+.web-button {
+  background-color: #0D1117; 
+  color: white;
+  border: none;
+  font-size: 26px;
+  padding: 30px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  transition-duration: 0.6s;
+}
+.web-button:hover {
+  background-color: #ffffff; /* Green */
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.div-contenaire {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 @media (max-width: 1000px) {
    .pages-image-1 {
     max-height: 300px;
