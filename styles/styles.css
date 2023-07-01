@@ -1,0 +1,275 @@
+html {
+    
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+
+
+}
+
+body {
+  margin: 0px;
+}
+
+div {
+    /* border: 3px solid; */
+}
+
+h1 {
+    font-size: 90px;
+}
+h3 {
+    font-size: 48px;
+}
+
+tr,
+td,
+table {
+    /* border: 2px solid; */
+}
+
+/* ------------------------------ Main ------------------------------ */
+
+.main {
+    height:100%;
+    text-align: center;
+    /* padding-top: 100px; */
+    /* padding-bottom: 11%; */
+    font-size: 26px;
+    background-color: #416D76;
+    color: #FFFFFF;
+
+}
+.h1-titre{
+    padding-top: 10%;
+}
+
+.text {
+    width : 40%;
+    text-align: center;
+    margin: auto;
+    /* font-family: "Courier New", sans-serif; */
+}
+
+
+/* ------------------------------ Competence ------------------------------ */
+
+.competence {
+    background-color: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 26px;
+}
+.competence-header {
+    font-size: 60px;
+    padding-left: 120px;
+}
+
+.talbe-competence{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+.competence-images {
+    width: 200px;
+}
+
+td {
+    text-align: center;
+    font-size: 40px;
+    width: 10%;
+}
+.text-competence {
+    vertical-align: top;
+    font-size: 22px;
+}
+
+.ligne-image {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+tr {
+    
+}
+
+/* ------------------------------ grid ------------------------------ */
+
+.grid-container {
+    background-color: #9A9190;
+    display: grid;
+    grid-template-areas: 
+      'header header header'
+      'grid-1 grid-1 grid-2'
+      'grid-3 grid-4 grid-5'
+      'grid-6 grid-7 grid-7';
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+    padding-bottom: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+} 
+
+.header {
+    grid-area: header;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 45px;
+    color: #FFFFFF;
+}  
+
+.grid-1,
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6,
+.grid-7 {
+    height: 400px; 
+    background-color: #416D76;
+    position: relative;
+    border-radius: 10px;
+    
+}
+.grid-1:hover,
+.grid-2:hover,
+.grid-3:hover,
+.grid-4:hover,
+.grid-5:hover,
+.grid-6:hover,
+.grid-7:hover {
+    border-radius: 20px;
+}
+
+.grid-1 {
+    grid-area: grid-1;
+    background-image: url("../images/contamination/contamination_main.jpg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.grid-2 {
+    grid-area: grid-2;
+    background-image: url("../images/voliere/voliere_main.png");
+    background-position: center;
+    background-size: cover;
+}
+.grid-3 {
+    grid-area: grid-3;
+    background-image: url("../images/workbench/workbench_ig_1.png");
+    background-position: center;
+    background-size: cover;
+}
+.grid-4 {
+    grid-area: grid-4;
+    background-image: url("../images/iafood/iafood_main.png");
+    background-position: center;
+    background-size: cover;
+}
+.grid-5 {
+    grid-area: grid-5;
+    background-image: url("../images/WIP.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.grid-6 {
+    grid-area: grid-6;
+    background-image: url("../images/WIP.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.grid-7 {
+    grid-area: grid-7;
+    background-image: url("../images/WIP.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* ------------------------------ Footer ------------------------------ */
+
+.footer {
+    background-color: #3D3D3D;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    color: #FFFFFF;
+    font-size: 26px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-left {
+    align-self: center;
+
+}
+.footer-right {
+    align-self: center;
+}
+
+
+/* ------------------------------ Responsive layout ------------------------------ */
+
+@media (max-width: 1000px) {
+    .grid-container  {
+      grid-template-areas: 
+      'header'
+      'grid-1'
+      'grid-2'
+      'grid-3'
+      'grid-4'
+      'grid-5'
+      'grid-6'
+      'grid-7';
+      padding-bottom: 10%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .text {
+        width : 80%;
+    }
+    .h1-titre{
+        padding-top: 5%;
+    }
+
+    /* ------------------------------ Competence ------------------------------ */
+
+    .competence-header {
+        font-size: 40px;
+        padding-left: 80px;
+    }
+    .competence-images {
+        width: 100px;
+    }
+    td {
+        text-align: center;
+        font-size: 28px;
+        width: 1%;
+    }
+    .text-competence {
+        vertical-align: top;
+        font-size: 18px;
+    }
+    .ligne-image {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

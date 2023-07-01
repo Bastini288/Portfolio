@@ -1,0 +1,52 @@
+html {
+  background-color: #416D76;
+}
+
+div {
+    /* border: 3px solid; */
+}
+
+.pages-header {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 70px;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.pages-images {
+  padding-bottom: 70px;
+}
+
+.pages-image-1 {
+  width: 70%;
+  /* height: auto; */
+  max-height: 700px;
+  object-fit: cover;
+  display: block;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.fixedbutton {
+  position: fixed;
+  width: 70px;
+  top: 30px;
+  left: 30px; 
+}
+
+.pages-notes {
+  margin-top: 100px;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 32px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 1000px) {
+   .pages-image-1 {
+    max-height: 300px;
+  }
+}
